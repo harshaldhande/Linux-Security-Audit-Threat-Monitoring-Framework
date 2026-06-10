@@ -1,0 +1,294 @@
+
+[1;37m[ Lynis 3.1.6 ][0m
+
+################################################################################
+  Lynis comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+  welcome to redistribute it under the terms of the GNU General Public License.
+  See the LICENSE file for details about using this software.
+
+  2007-2025, CISOfy - https://cisofy.com/lynis/
+  Enterprise support available (compliance, plugins, interface and tools)
+################################################################################
+
+
+[+] [1;33mInitializing program[0m
+------------------------------------
+[2C- Detecting OS... [41C [ [1;32mDONE[0m ]
+[2C- Checking profiles...[37C [ [1;32mDONE[0m ]
+
+  ---------------------------------------------------
+  Program version:           3.1.6
+  Operating system:          Linux
+  Operating system name:     Kali Linux
+  Operating system version:  Rolling release
+  End-of-life:               [1;31mUNKNOWN[0m
+  Kernel version:            6.19.14+kali
+  Hardware platform:         x86_64
+  Hostname:                  kali
+  ---------------------------------------------------
+  Profiles:                  /etc/lynis/default.prf
+  Log file:                  /var/log/lynis.log
+  Report file:               /var/log/lynis-report.dat
+  Report version:            1.0
+  Plugin directory:          /etc/lynis/plugins
+  ---------------------------------------------------
+  Auditor:                   [Not Specified]
+  Language:                  en
+  Test category:             all
+  Test group:                all
+  ---------------------------------------------------
+[2C- Program update status... [32C [ [1;32mNO UPDATE[0m ]
+
+      ===============================================================================
+        [0;36mLynis might be outdated[0m
+      ===============================================================================
+
+        [1;33mCurrent version is more than 6 months old[0m
+        This version might be [1;37mPlease check if there is a more recent version available.[0m
+
+        [1;37mPlease check if there is a more recent version available.[0m
+
+        Download locations:
+
+        Packages (DEB/RPM) -  https://packages.cisofy.com/
+        Website (TAR)      -  https://cisofy.com/downloads/
+        GitHub             -  https://github.com/CISOfy/lynis
+
+      ===============================================================================
+
+
+[+] [1;33mSystem tools[0m
+------------------------------------
+[2C- Scanning available tools...[30C
+[2C- Checking system binaries...[30C
+
+[+] [1;35mPlugins (phase 1)[0m
+------------------------------------
+[0CNote: plugins have more extensive tests and may take several minutes to complete[0C
+[0C [0C
+[2C- [0;36mPlugin[0m: [1;37mdebian[0m[21C
+    [
+[+] [1;33mDebian Tests[0m
+------------------------------------
+[2C- Checking for system binaries that are required by Debian Tests...[0C
+[4C- Checking /bin... [38C [ [1;32mFOUND[0m ]
+[4C- Checking /sbin... [37C [ [1;32mFOUND[0m ]
+[4C- Checking /usr/bin... [34C [ [1;32mFOUND[0m ]
+[4C- Checking /usr/sbin... [33C [ [1;32mFOUND[0m ]
+[4C- Checking /usr/local/bin... [28C [ [1;32mFOUND[0m ]
+[4C- Checking /usr/local/sbin... [27C [ [1;32mFOUND[0m ]
+[2C- Authentication:[42C
+[4C- PAM (Pluggable Authentication Modules):[16C
+
+  [30;43m[WARNING][0m: Test DEB-0001 had a long execution: 97.255864 seconds[0m
+
+[6C- libpam-tmpdir[40C [ [1;31mNot Installed[0m ]
+[2C- File System Checks:[38C
+[4C- DM-Crypt, Cryptsetup & Cryptmount:[21C
+
+  [30;43m[WARNING][0m: Test DEB-0280 had a long execution: 22.761004 seconds[0m
+
+[2C- Software:[48C
+[4C- apt-listbugs[43C [ [1;31mNot Installed[0m ]
+[4C- apt-listchanges[40C [ [1;31mNot Installed[0m ]
+[4C- needrestart[44C [ [1;31mNot Installed[0m ]
+[4C- fail2ban[47C [ [1;31mNot Installed[0m ]
+]
+
+[+] [1;33mBoot and services[0m
+------------------------------------
+[2C- Service Manager[42C [ [1;32msystemd[0m ]
+[2C- Checking UEFI boot[39C [ [1;37mDISABLED[0m ]
+[2C- Checking presence GRUB2[34C [ [1;32mFOUND[0m ]
+[4C- Checking for password protection[23C [ [1;31mNONE[0m ]
+[2C- Check running services (systemctl)[23C [ [1;32mDONE[0m ]
+[8CResult: found 25 running services[20C
+[2C- Check enabled services at boot (systemctl)[15C [ [1;32mDONE[0m ]
+[8CResult: found 24 enabled services[20C
+[2C- Check startup files (permissions)[24C [ [1;32mOK[0m ]
+
+  [30;43m[WARNING][0m: Test BOOT-5184 had a long execution: 14.455504 seconds[0m
+
+[2C- Running 'systemd-analyze security'[23C
+[6CUnit name (exposure value) and predicate[15C
+[6C--------------------------------[23C
+[4C- ModemManager.service (value=6.3)[23C [ [1;37mMEDIUM[0m ]
+[4C- NetworkManager.service (value=7.8)[21C [ [1;33mEXPOSED[0m ]
+[4C- accounts-daemon.service (value=5.5)[20C [ [1;37mMEDIUM[0m ]
+[4C- apache2.service (value=5.7)[28C [ [1;37mMEDIUM[0m ]
+[4C- colord.service (value=3.5)[29C [ [1;32mPROTECTED[0m ]
+[4C- containerd.service (value=9.6)[25C [ [1;33mUNSAFE[0m ]
+[4C- cron.service (value=9.6)[31C [ [1;33mUNSAFE[0m ]
+[4C- dbus.service (value=9.3)[31C [ [1;33mUNSAFE[0m ]
+[4C- docker.service (value=9.6)[29C [ [1;33mUNSAFE[0m ]
+[4C- emergency.service (value=9.5)[26C [ [1;33mUNSAFE[0m ]
+[4C- firewalld.service (value=7.3)[26C [ [1;37mMEDIUM[0m ]
+[4C- getty@tty1.service (value=9.6)[25C [ [1;33mUNSAFE[0m ]
+[4C- haveged.service (value=3.2)[28C [ [1;32mPROTECTED[0m ]
+[4C- lightdm.service (value=9.6)[28C [ [1;33mUNSAFE[0m ]
+[4C- lynis.service (value=9.6)[30C [ [1;33mUNSAFE[0m ]
+[4C- open-vm-tools.service (value=9.5)[22C [ [1;33mUNSAFE[0m ]
+[4C- pcscd.service (value=1.8)[30C [ [1;32mPROTECTED[0m ]
+[4C- plymouth-start.service (value=9.5)[21C [ [1;33mUNSAFE[0m ]
+[4C- polkit.service (value=1.2)[29C [ [1;32mPROTECTED[0m ]
+[4C- rescue.service (value=9.5)[29C [ [1;33mUNSAFE[0m ]
+[4C- rpc-gssd.service (value=9.5)[27C [ [1;33mUNSAFE[0m ]
+[4C- rpc-statd-notify.service (value=9.5)[19C [ [1;33mUNSAFE[0m ]
+[4C- rpc-svcgssd.service (value=9.5)[24C [ [1;33mUNSAFE[0m ]
+[4C- rtkit-daemon.service (value=7.2)[23C [ [1;37mMEDIUM[0m ]
+[4C- smartmontools.service (value=9.6)[22C [ [1;33mUNSAFE[0m ]
+[4C- ssh.service (value=9.6)[32C [ [1;33mUNSAFE[0m ]
+[4C- systemd-ask-password-console.service (value=9.4)[7C [ [1;33mUNSAFE[0m ]
+[4C- systemd-ask-password-plymouth.service (value=9.5)[6C [ [1;33mUNSAFE[0m ]
+[4C- systemd-ask-password-wall.service (value=9.4)[10C [ [1;33mUNSAFE[0m ]
+[4C- systemd-bsod.service (value=9.5)[23C [ [1;33mUNSAFE[0m ]
+[4C- systemd-hostnamed.service (value=1.7)[18C [ [1;32mPROTECTED[0m ]
+[4C- systemd-journald.service (value=4.9)[19C [ [1;32mPROTECTED[0m ]
+[4C- systemd-logind.service (value=2.8)[21C [ [1;32mPROTECTED[0m ]
+[4C- systemd-networkd.service (value=2.9)[19C [ [1;32mPROTECTED[0m ]
+[4C- systemd-rfkill.service (value=9.4)[21C [ [1;33mUNSAFE[0m ]
+[4C- systemd-timesyncd.service (value=2.1)[18C [ [1;32mPROTECTED[0m ]
+[4C- systemd-udevd.service (value=7.1)[22C [ [1;37mMEDIUM[0m ]
+[4C- systemd-userdbd.service (value=2.3)[20C [ [1;32mPROTECTED[0m ]
+[4C- tpm-udev.service (value=9.6)[27C [ [1;33mUNSAFE[0m ]
+[4C- udisks2.service (value=9.6)[28C [ [1;33mUNSAFE[0m ]
+[4C- upower.service (value=2.4)[29C [ [1;32mPROTECTED[0m ]
+[4C- user@1000.service (value=9.4)[26C [ [1;33mUNSAFE[0m ]
+[4C- vgauth.service (value=9.5)[29C [ [1;33mUNSAFE[0m ]
+[4C- vsftpd.service (value=9.6)[29C [ [1;33mUNSAFE[0m ]
+
+[+] [1;33mKernel[0m
+------------------------------------
+[2C- Checking default runlevel[32C [ [1;32mrunlevel 5[0m ]
+[2C- Checking CPU support (NX/PAE)[28C
+[4CCPU support: PAE and/or NoeXecute supported[14C [ [1;32mFOUND[0m ]
+[2C- Checking kernel version and release[22C [ [1;32mDONE[0m ]
+[2C- Checking kernel type[37C [ [1;32mDONE[0m ]
+[2C- Checking loaded kernel modules[27C [ [1;32mDONE[0m ]
+[6CFound 112 active modules[31C
+[2C- Checking Linux kernel configuration file[17C [ [1;32mFOUND[0m ]
+[2C- Checking default I/O kernel scheduler[20C [ [1;37mNOT FOUND[0m ]
+[2C- Checking for available kernel update[21C [ [1;32mOK[0m ]
+[2C- Checking core dumps configuration[24C
+[4C- configuration in systemd conf files[20C [ [1;37mDEFAULT[0m ]
+[4C- configuration in /etc/profile[26C [ [1;37mDEFAULT[0m ]
+[4C- 'hard' configuration in /etc/security/limits.conf[6C [ [1;31mENABLED[0m ]
+[4C- 'soft' configuration in /etc/security/limits.conf[6C [ [1;32mDISABLED[0m ]
+[4C- Checking setuid core dumps configuration[15C [ [1;32mDISABLED[0m ]
+[2C- Check if reboot is needed[32C [ [1;32mNO[0m ]
+
+[+] [1;33mMemory and Processes[0m
+------------------------------------
+[2C- Checking /proc/meminfo[35C [ [1;32mFOUND[0m ]
+[2C- Searching for dead/zombie processes[22C [ [1;32mNOT FOUND[0m ]
+[2C- Searching for IO waiting processes[23C [ [1;32mNOT FOUND[0m ]
+[2C- Search prelink tooling[35C [ [1;32mNOT FOUND[0m ]
+
+[+] [1;33mUsers, Groups and Authentication[0m
+------------------------------------
+[2C- Administrator accounts[35C [ [1;32mOK[0m ]
+[2C- Unique UIDs[46C [ [1;32mOK[0m ]
+[2C- Consistency of group files (grpck)[23C [ [1;32mOK[0m ]
+[2C- Unique group IDs[41C [ [1;32mOK[0m ]
+[2C- Unique group names[39C [ [1;32mOK[0m ]
+[2C- Password file consistency[32C [ [1;32mOK[0m ]
+[2C- Password hashing methods[33C [ [1;32mOK[0m ]
+[2C- Checking password hashing rounds[25C [ [1;33mDISABLED[0m ]
+[2C- Query system users (non daemons)[25C [ [1;32mDONE[0m ]
+[2C- NIS+ authentication support[30C [ [1;37mNOT ENABLED[0m ]
+[2C- NIS authentication support[31C [ [1;37mNOT ENABLED[0m ]
+[2C- Sudoers file(s)[42C [ [1;32mFOUND[0m ]
+[4C- Permissions for directory: /etc/sudoers.d[14C [ [1;31mWARNING[0m ]
+[4C- Permissions for: /etc/sudoers[26C [ [1;32mOK[0m ]
+[4C- Permissions for: /etc/sudoers.d/ospd-openvas[11C [ [1;32mOK[0m ]
+[4C- Permissions for: /etc/sudoers.d/kali-grant-root[8C [ [1;32mOK[0m ]
+[2C- PAM password strength tools[30C [ [1;33mSUGGESTION[0m ]
+[2C- PAM configuration files (pam.conf)[23C [ [1;32mFOUND[0m ]
+[2C- PAM configuration files (pam.d)[26C [ [1;32mFOUND[0m ]
+[2C- PAM modules[46C [ [1;32mFOUND[0m ]
+[2C- LDAP module in PAM[39C [ [1;37mNOT FOUND[0m ]
+[2C- Accounts without expire date[29C [ [1;33mSUGGESTION[0m ]
+[2C- Accounts without password[32C [ [1;32mOK[0m ]
+[2C- Locked accounts[42C [ [1;32mOK[0m ]
+[2C- Checking user password aging (minimum)[19C [ [1;33mDISABLED[0m ]
+[2C- User password aging (maximum)[28C [ [1;33mDISABLED[0m ]
+[2C- Checking expired passwords[31C [ [1;32mOK[0m ]
+[2C- Checking Linux single user mode authentication[11C [ [1;32mOK[0m ]
+[2C- Determining default umask[32C
+[4C- umask (/etc/profile)[35C [ [1;33mNOT FOUND[0m ]
+[4C- umask (/etc/login.defs)[32C [ [1;33mSUGGESTION[0m ]
+[2C- LDAP authentication support[30C [ [1;37mNOT ENABLED[0m ]
+[2C- Logging failed login attempts[28C [ [1;33mDISABLED[0m ]
+
+[+] [1;33mKerberos[0m
+------------------------------------
+[2C- Check for Kerberos KDC and principals[20C [ [1;37mNOT FOUND[0m ]
+
+[+] [1;33mShells[0m
+------------------------------------
+[2C- Checking shells from /etc/shells[25C
+[4CResult: found 13 shells (valid shells: 13).[14C
+[4C- Session timeout settings/tools[25C [ [1;33mNONE[0m ]
+[2C- Checking default umask values[28C
+[4C- Checking default umask in /etc/bash.bashrc[13C [ [1;33mNONE[0m ]
+[4C- Checking default umask in /etc/profile[17C [ [1;33mNONE[0m ]
+
+[+] [1;33mFile systems[0m
+------------------------------------
+[2C- Checking mount points[36C
+[4C- Checking /home mount point[29C [ [1;33mSUGGESTION[0m ]
+[4C- Checking /tmp mount point[30C [ [1;32mOK[0m ]
+[4C- Checking /var mount point[30C [ [1;33mSUGGESTION[0m ]
+[2C- Query swap partitions (fstab)[28C [ [1;32mOK[0m ]
+[2C- Testing swap partitions[34C [ [1;32mOK[0m ]
+[2C- Testing /proc mount (hidepid)[28C [ [1;33mSUGGESTION[0m ]
+[2C- Checking for old files in /tmp[27C [ [1;32mOK[0m ]
+[2C- Checking /tmp sticky bit[33C [ [1;32mOK[0m ]
+[2C- Checking /var/tmp sticky bit[29C [ [1;32mOK[0m ]
+[2C- ACL support root file system[29C [ [1;32mENABLED[0m ]
+[2C- Mount options of /[39C [ [1;33mNON DEFAULT[0m ]
+[2C- Mount options of /dev[36C [ [1;33mPARTIALLY HARDENED[0m ]
+[2C- Mount options of /dev/shm[32C [ [1;33mPARTIALLY HARDENED[0m ]
+[2C- Mount options of /run[36C [ [1;32mHARDENED[0m ]
+[2C- Mount options of /tmp[36C [ [1;33mPARTIALLY HARDENED[0m ]
+[2C- Total without nodev:6 noexec:11 nosuid:4 ro or noexec (W^X): 11 of total 27[0C
+[2C- Checking Locate database[33C [ [1;32mFOUND[0m ]
+[2C- Disable kernel support of some filesystems[15C
+
+[+] [1;33mUSB Devices[0m
+------------------------------------
+[2C- Checking usb-storage driver (modprobe config)[12C [ [1;37mNOT DISABLED[0m ]
+[2C- Checking USB devices authorization[23C [ [1;33mENABLED[0m ]
+[2C- Checking USBGuard[40C [ [1;37mNOT FOUND[0m ]
+
+[+] [1;33mStorage[0m
+------------------------------------
+[2C- Checking firewire ohci driver (modprobe config)[10C [ [1;37mNOT DISABLED[0m ]
+
+[+] [1;33mNFS[0m
+------------------------------------
+[2C- Query rpc registered programs[28C [ [1;32mDONE[0m ]
+[2C- Query NFS versions[39C [ [1;32mDONE[0m ]
+[2C- Query NFS protocols[38C [ [1;32mDONE[0m ]
+[2C- Check running NFS daemon[33C [ [1;37mNOT FOUND[0m ]
+
+[+] [1;33mName services[0m
+------------------------------------
+[2C- Checking search domains[34C [ [1;32mFOUND[0m ]
+[2C- Searching DNS domain name[32C [ [1;33mUNKNOWN[0m ]
+[2C- Checking /etc/hosts[38C
+[4C- Duplicate entries in hosts file[24C [ [1;32mNONE[0m ]
+[4C- Presence of configured hostname in /etc/hosts[10C [ [1;32mFOUND[0m ]
+[4C- Hostname mapped to localhost[27C [ [1;32mNOT FOUND[0m ]
+[4C- Localhost mapping to IP address[24C [ [1;32mOK[0m ]
+
+[+] [1;33mPorts and packages[0m
+------------------------------------
+[2C- Searching package managers[31C
+[4C- Searching RPM package manager[26C [ [1;32mFOUND[0m ]
+[6C- Querying RPM package manager[25C
+[4C- Searching dpkg package manager[25C [ [1;32mFOUND[0m ]
+[6C- Querying package manager[29C
+
+Interrupt detected.
+[0CCleaning up...[0C [ [1;32mDONE[0m ]
