@@ -1,0 +1,4 @@
+grep: /etc/kernel-img.conf: No such file or directory
+2026-06-11 06:18:38,200 fail2ban.configreader   [369378]: WARNING 'allowipv6' not defined in 'Definition'. Using default one: 'auto'
+pgrep: pattern that searches for process name longer than 15 characters will result in zero matches
+Try `pgrep -f' option to match against the complete command line.

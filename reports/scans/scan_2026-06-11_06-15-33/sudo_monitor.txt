@@ -1,0 +1,244 @@
+[H[2J[3J[0;36m========================================[0m
+[0;36m       SUDO ACTIVITY MONITOR[0m
+[0;36m========================================[0m
+[0;34mDate:[0m Thu Jun 11 06:15:48 UTC 2026
+
+[1;33mPrivilege Escalation Statistics[0m
+----------------------------------------
+Total Sudo Events : [0;32m286[0m
+
+[0;34mRecent Sudo Activity (Last 20 Events)[0m
+----------------------------------------
+Jun 11 05:38:55 Harshal96507C1 sudo[161788]: pam_unix(sudo:session): session closed for user root
+Jun 11 05:39:41 Harshal96507C1 sudo[202714]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 05:39:41 Harshal96507C1 sudo[202714]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Jun 11 05:39:41 Harshal96507C1 sudo[202714]: pam_unix(sudo:session): session closed for user root
+Jun 11 05:39:41 Harshal96507C1 sudo[202717]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 05:39:41 Harshal96507C1 sudo[202717]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Jun 11 05:39:41 Harshal96507C1 sudo[202717]: pam_unix(sudo:session): session closed for user root
+Jun 11 05:39:41 Harshal96507C1 sudo[202720]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 05:39:41 Harshal96507C1 sudo[202720]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Jun 11 05:39:42 Harshal96507C1 sudo[202720]: pam_unix(sudo:session): session closed for user root
+Jun 11 06:15:39 Harshal96507C1 sudo[333841]: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/2 ruser=harsh rhost=  user=harsh
+Jun 11 06:15:45 Harshal96507C1 sudo[333841]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 06:15:45 Harshal96507C1 sudo[333841]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 06:15:45 Harshal96507C1 sudo[333841]: pam_unix(sudo:session): session closed for user root
+Jun 11 06:15:45 Harshal96507C1 sudo[333844]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 06:15:45 Harshal96507C1 sudo[333844]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 06:15:45 Harshal96507C1 sudo[333844]: pam_unix(sudo:session): session closed for user root
+Jun 11 06:15:45 Harshal96507C1 sudo[333847]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 06:15:45 Harshal96507C1 sudo[333847]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 06:15:46 Harshal96507C1 sudo[333847]: pam_unix(sudo:session): session closed for user root
+
+[0;32mExecuted Sudo Commands[0m
+----------------------------------------
+Jun 10 03:59:23 Harshal96507C1 sudo[1640]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/apt install libpam-pwquality -y
+Jun 10 04:00:27 Harshal96507C1 sudo[2142]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/vi /etc/security/pwquality.conf
+Jun 10 04:02:04 Harshal96507C1 sudo[2218]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/vi /etc/profile.d/timeout.sh
+Jun 10 04:02:51 Harshal96507C1 sudo[2253]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/apt install auditd audispd-plugins -y
+Jun 10 04:03:09 Harshal96507C1 sudo[2601]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/vi /etc/audit/rules.d/audit.rules
+Jun 10 04:04:29 Harshal96507C1 sudo[2655]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/sbin/adduser huuser
+Jun 10 04:05:18 Harshal96507C1 sudo[2729]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/passwd huuser
+Jun 10 04:05:33 Harshal96507C1 sudo[2739]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/passwd huuser
+Jun 10 04:05:53 Harshal96507C1 sudo[2767]:    harsh : TTY=pts/0 ; PWD=/home/harsh/cfrpractice ; USER=root ; COMMAND=/usr/bin/vi /etc/profile.d/timeout.sh
+Jun 10 05:51:36 Harshal96507C1 sudo[1553]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install toilet
+Jun 10 05:52:02 Harshal96507C1 sudo[1746]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install fortune-mod
+Jun 10 05:52:07 Harshal96507C1 sudo[1887]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install fortune-mod
+Jun 10 05:53:51 Harshal96507C1 sudo[2042]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install bb
+Jun 10 05:54:30 Harshal96507C1 sudo[2409]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install asciiquarium -y
+Jun 10 05:54:37 Harshal96507C1 sudo[2430]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install asciiquarium
+Jun 10 05:54:56 Harshal96507C1 sudo[2498]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/snap install asciiquarium~
+Jun 10 05:55:11 Harshal96507C1 sudo[2533]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/snap install asciiquarium~
+Jun 10 05:55:15 Harshal96507C1 sudo[2556]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/snap install asciiquarium
+Jun 10 05:58:11 Harshal96507C1 sudo[3443]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install libaa-bin
+Jun 10 05:59:25 Harshal96507C1 sudo[3651]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install greed
+Jun 10 06:01:03 Harshal96507C1 sudo[3889]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt install nyancat
+Jun 10 06:04:05 Harshal96507C1 sudo[4286]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt clean
+Jun 10 06:07:34 Harshal96507C1 sudo[5216]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/sbin/init 0
+Jun 10 06:12:43 Harshal96507C1 sudo[1784]:    harsh : TTY=pts/1 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/apt install cowsay
+Jun 10 06:16:51 Harshal96507C1 sudo[1457]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/apt remove --purge sl cmatrix cowsay fortune-mod figlet toilet pipes-sh libaa-bin telnet -y
+Jun 10 06:16:54 Harshal96507C1 sudo[1586]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/apt autoremove --purge -y
+Jun 10 06:16:56 Harshal96507C1 sudo[1691]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/apt clean
+Jun 10 06:17:56 Harshal96507C1 sudo[1426]:    harsh : TTY=pts/0 ; PWD=/mnt/c/Users/harsh ; USER=root ; COMMAND=/usr/bin/apt autoremove --purge
+Jun 10 06:21:25 Harshal96507C1 sudo[1497]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/cat /home/harsh/.bash_history
+Jun 10 06:23:42 Harshal96507C1 sudo[1621]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/cat /var/log/syslog
+Jun 10 06:36:47 Harshal96507C1 sudo[2274]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/cat /var/log/syslog
+Jun 11 00:56:55 Harshal96507C1 sudo[3685]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl ufw start
+Jun 11 00:58:04 Harshal96507C1 sudo[3737]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/apt install ufw
+Jun 11 00:58:39 Harshal96507C1 sudo[4183]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status
+Jun 11 00:58:44 Harshal96507C1 sudo[4188]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw start
+Jun 11 00:58:50 Harshal96507C1 sudo[4193]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status
+Jun 11 00:59:53 Harshal96507C1 sudo[4249]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start ufw
+Jun 11 00:59:59 Harshal96507C1 sudo[4255]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status ufw
+Jun 11 01:00:31 Harshal96507C1 sudo[4360]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 01:42:53 Harshal96507C1 sudo[4433]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status ufw
+Jun 11 01:43:02 Harshal96507C1 sudo[4438]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 01:49:55 Harshal96507C1 sudo[4782]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start ufw
+Jun 11 01:50:03 Harshal96507C1 sudo[4787]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start ufw
+Jun 11 01:50:26 Harshal96507C1 sudo[4812]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start ufw
+Jun 11 01:50:42 Harshal96507C1 sudo[4826]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start ufw
+Jun 11 01:51:10 Harshal96507C1 sudo[4864]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status ufw
+Jun 11 01:51:29 Harshal96507C1 sudo[4878]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status verbose
+Jun 11 01:52:07 Harshal96507C1 sudo[4918]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status ufw
+Jun 11 02:29:23 Harshal96507C1 sudo[5290]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status ufw
+Jun 11 02:31:03 Harshal96507C1 sudo[5370]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 02:31:03 Harshal96507C1 sudo[5373]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 02:31:03 Harshal96507C1 sudo[5376]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 02:40:07 Harshal96507C1 sudo[5863]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status
+Jun 11 02:42:44 Harshal96507C1 sudo[5988]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 02:42:44 Harshal96507C1 sudo[5991]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 02:42:44 Harshal96507C1 sudo[5994]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 02:53:19 Harshal96507C1 sudo[6585]:    harsh : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/apt install rkhunter -y
+Jun 11 03:36:58 Harshal96507C1 sudo[130027]:     root : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/apt install lynis -y
+Jun 11 03:59:13 Harshal96507C1 sudo[155517]:     root : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/apt install fail2ban -y
+Jun 11 03:59:45 Harshal96507C1 sudo[155835]:     root : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl enable fail2ban
+Jun 11 04:05:44 Harshal96507C1 sudo[156273]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start openssh
+Jun 11 04:05:49 Harshal96507C1 sudo[156288]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start openssh-server
+Jun 11 04:06:34 Harshal96507C1 sudo[156312]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/apt list installed
+Jun 11 04:09:09 Harshal96507C1 sudo[156437]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 11 04:10:30 Harshal96507C1 sudo[156907]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/apt install openssh-server -y
+Jun 11 04:11:42 Harshal96507C1 sudo[157386]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jun 11 04:11:49 Harshal96507C1 sudo[157410]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+Jun 11 04:11:53 Harshal96507C1 sudo[157417]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jun 11 04:12:36 Harshal96507C1 sudo[157440]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl status fail2ban
+Jun 11 04:12:48 Harshal96507C1 sudo[157464]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/fail2ban-client status
+Jun 11 04:14:06 Harshal96507C1 sudo[157601]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl restart fail2ban
+Jun 11 04:17:42 Harshal96507C1 sudo[157887]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 04:17:42 Harshal96507C1 sudo[157890]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 04:17:42 Harshal96507C1 sudo[157893]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 04:56:13 Harshal96507C1 sudo[159459]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 04:56:14 Harshal96507C1 sudo[159464]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 04:56:14 Harshal96507C1 sudo[159467]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 04:57:51 Harshal96507C1 sudo[159589]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+Jun 11 04:57:52 Harshal96507C1 sudo[159593]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/grep sshd /var/log/auth.log
+Jun 11 04:58:20 Harshal96507C1 sudo[159628]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/sbin/ufw status
+Jun 11 04:58:20 Harshal96507C1 sudo[159637]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+Jun 11 04:58:20 Harshal96507C1 sudo[159641]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/tail -20 /var/log/snort/snort.alert
+Jun 11 05:15:39 Harshal96507C1 sudo[160485]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 05:15:39 Harshal96507C1 sudo[160488]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 05:15:39 Harshal96507C1 sudo[160491]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 05:36:04 Harshal96507C1 sudo[161627]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 05:36:04 Harshal96507C1 sudo[161630]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 05:36:04 Harshal96507C1 sudo[161633]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 05:36:51 Harshal96507C1 sudo[161788]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/sbin/lynis audit system
+Jun 11 05:39:41 Harshal96507C1 sudo[202714]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 05:39:41 Harshal96507C1 sudo[202717]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 05:39:41 Harshal96507C1 sudo[202720]:     root : TTY=pts/0 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Jun 11 06:15:45 Harshal96507C1 sudo[333841]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-active ufw
+Jun 11 06:15:45 Harshal96507C1 sudo[333844]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/bin/systemctl is-enabled ufw
+Jun 11 06:15:45 Harshal96507C1 sudo[333847]:    harsh : TTY=pts/2 ; PWD=/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+
+[1;33mUsers Performing Sudo Operations[0m
+----------------------------------------
+sudo[130027]:
+sudo[1426]:
+sudo[1457]:
+sudo[1497]:
+sudo[1553]:
+sudo[155517]:
+sudo[155835]:
+sudo[156273]:
+sudo[156288]:
+sudo[156312]:
+sudo[156437]:
+sudo[156907]:
+sudo[157386]:
+sudo[157410]:
+sudo[157417]:
+sudo[157440]:
+sudo[157464]:
+sudo[157601]:
+sudo[157887]:
+sudo[157890]:
+sudo[157893]:
+sudo[1586]:
+sudo[159459]:
+sudo[159464]:
+sudo[159467]:
+sudo[159589]:
+sudo[159593]:
+sudo[159628]:
+sudo[159637]:
+sudo[159641]:
+sudo[160485]:
+sudo[160488]:
+sudo[160491]:
+sudo[161627]:
+sudo[161630]:
+sudo[161633]:
+sudo[161788]:
+sudo[1621]:
+sudo[1640]:
+sudo[1691]:
+sudo[1746]:
+sudo[1784]:
+sudo[1887]:
+sudo[202714]:
+sudo[202717]:
+sudo[202720]:
+sudo[2042]:
+sudo[2142]:
+sudo[2218]:
+sudo[2253]:
+sudo[2274]:
+sudo[2409]:
+sudo[2430]:
+sudo[2498]:
+sudo[2533]:
+sudo[2556]:
+sudo[2601]:
+sudo[2655]:
+sudo[2729]:
+sudo[2739]:
+sudo[2767]:
+sudo[333841]:
+sudo[333844]:
+sudo[333847]:
+sudo[3443]:
+sudo[3651]:
+sudo[3685]:
+sudo[3737]:
+sudo[3889]:
+sudo[4183]:
+sudo[4188]:
+sudo[4193]:
+sudo[4249]:
+sudo[4255]:
+sudo[4286]:
+sudo[4360]:
+sudo[4433]:
+sudo[4438]:
+sudo[4782]:
+sudo[4787]:
+sudo[4812]:
+sudo[4826]:
+sudo[4864]:
+sudo[4878]:
+sudo[4918]:
+sudo[5216]:
+sudo[5290]:
+sudo[5370]:
+sudo[5373]:
+sudo[5376]:
+sudo[5863]:
+sudo[5988]:
+sudo[5991]:
+sudo[5994]:
+sudo[6585]:
+
+[0;34mRecent Root Access Events[0m
+----------------------------------------
+Jun 11 05:36:04 Harshal96507C1 sudo[161627]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 05:36:04 Harshal96507C1 sudo[161630]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 05:36:04 Harshal96507C1 sudo[161633]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 05:36:51 Harshal96507C1 sudo[161788]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 05:39:41 Harshal96507C1 sudo[202714]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Jun 11 05:39:41 Harshal96507C1 sudo[202717]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Jun 11 05:39:41 Harshal96507C1 sudo[202720]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Jun 11 06:15:45 Harshal96507C1 sudo[333841]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 06:15:45 Harshal96507C1 sudo[333844]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jun 11 06:15:45 Harshal96507C1 sudo[333847]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+
+[0;36m========================================[0m
+[0;36m    SUDO MONITORING COMPLETED[0m
+[0;36m========================================[0m

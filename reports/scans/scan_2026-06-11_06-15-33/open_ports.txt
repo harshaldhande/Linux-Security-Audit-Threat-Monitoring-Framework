@@ -1,0 +1,41 @@
+[H[2J[3J[0;36m========================================[0m
+[0;36m         OPEN PORTS AUDIT[0m
+[0;36m========================================[0m
+[0;34mDate:[0m Thu Jun 11 06:15:46 UTC 2026
+[0;34mHostname:[0m Harshal96507C1
+
+[1;33mPort Statistics[0m
+----------------------------------------
+Listening TCP Ports : [0;32m9[0m
+Listening UDP Ports : [0;32m8[0m
+
+[0;34mListening Services[0m
+----------------------------------------
+Netid State  Recv-Q Send-Q  Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0          127.0.0.54:53         0.0.0.0:*          
+udp   UNCONN 0      0       127.0.0.53%lo:53         0.0.0.0:*          
+udp   UNCONN 0      0      10.255.255.254:53         0.0.0.0:*          
+udp   UNCONN 0      0           127.0.0.1:323        0.0.0.0:*          
+udp   UNCONN 0      0             0.0.0.0:4789       0.0.0.0:*          
+udp   UNCONN 0      0             0.0.0.0:59072      0.0.0.0:*          
+udp   UNCONN 0      0                   *:7946             *:*          
+udp   UNCONN 0      0               [::1]:323           [::]:*          
+tcp   LISTEN 0      4096          0.0.0.0:22         0.0.0.0:*          
+tcp   LISTEN 0      1000   10.255.255.254:53         0.0.0.0:*          
+tcp   LISTEN 0      4096    127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.54:53         0.0.0.0:*          
+tcp   LISTEN 0      4096                *:5000             *:*          
+tcp   LISTEN 0      4096             [::]:22            [::]:*          
+tcp   LISTEN 0      4096                *:7946             *:*          
+tcp   LISTEN 0      50                  *:8080             *:*          
+tcp   LISTEN 0      4096                *:2377             *:*          
+
+[0;32m[SUCCESS] Report saved:[0m
+../reports/scans/scan_2026-06-11_06-15-33/open_ports_2026-06-11_06-15-46.txt
+
+[1;33mSecurity Review[0m
+----------------------------------------
+
+[0;36m========================================[0m
+[0;36m      AUDIT COMPLETED[0m
+[0;36m========================================[0m

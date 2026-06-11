@@ -1,0 +1,10 @@
+===== FIREWALL AUDIT =====
+
+[1] UFW Service Status:
+active
+enabled
+
+[2] UFW Firewall Status:
+Status: inactive
+
+===== END OF FIREWALL AUDIT =====

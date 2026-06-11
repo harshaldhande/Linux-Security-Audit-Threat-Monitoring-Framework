@@ -1,0 +1,4 @@
+      SNORT ALERT MONITOR REPORT
+cat: /var/log/snort/snort.alert: Permission denied
+Report saved to:
+/mnt/g/project/Linux_motitoring_framework/Linux-Security-Audit-Threat-Monitoring-Framework/scripts/../reports/scans/scan_2026-06-11_06-15-33/snort_alerts_2026-06-11_06-18-53.txt
